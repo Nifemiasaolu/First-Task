@@ -4,18 +4,21 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+
         <title>First Task</title>
     </head>
     <body>
         <h1>Fill in the Biodata</h1>
-        <form action="" method="*">
+        <form action="" method="*" onsubmit="alert('Form Submitted Successfully')">
             <fieldset>
                 <legend>Biodata</legend>
                 <label for="fullname">Fullname: </label>
-                <input type="text" name="fullname" id="fullname" placeholder="Enter your name" />
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your name" required/>
 
                 <br />
                 <br />
+                
 
                 <label for="email">Email Address: </label>
                 <input
@@ -30,26 +33,26 @@
                 <br />
 
                 <label for="phone number">Phone Number: </label>
-                <input type="tel" name="Phone Number" id="Phone Number" />
+                <input type="tel" name="Phone Number" id="Phone Number" required/>
                 <br />
                 <br />
 
                 <label for="gender">Gender: </label>
                 <label for="male">Male </label>
-                <input type="radio" name="sex" value="male" />
+                <input type="radio" name="sex" value="male" required/>
 
                 <label for="female">Female </label>
-                <input type="radio" name="sex" value="female" />
+                <input type="radio" name="sex" value="female" required/>
 
                 <br />
                 <br />
 
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" placeholder="Password"  minlength="6" maxlength="12"required />
                 <br />
                 <br />
 
-                <input type="submit" value="SUBMIT" />
+                <input type="submit" value="SUBMIT"/>
             </fieldset>
         </form>
     </body>
